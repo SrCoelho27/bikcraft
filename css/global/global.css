@@ -11,7 +11,9 @@ ul {
   list-style: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -29,4 +31,5 @@ a {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 4px;
 }
