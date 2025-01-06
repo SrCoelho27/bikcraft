@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin-bottom: 2000px;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
