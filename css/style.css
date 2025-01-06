@@ -4,6 +4,9 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin-bottom: 2000px;
+}
 
 ul {
   list-style: none;
@@ -91,26 +94,42 @@ img {
     border-radius: 4px;
     font-size: 14px;
   }
+
+  .header {
+    justify-content: center;
+  }
 }
 
 .introducao-bg {
   background: #000;
   color: #fff;
+  box-shadow: 0 120px 0 #fff;
 }
 
 .introducao {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
 }
 
+.introducao-foto {
+  margin-bottom: -120px;
+}
+
+.introducao-foto img {
+  border-radius: 4px;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .introducao h1 {
   font-size: 4rem;
   line-height: 1.125;
+  margin-bottom: 40px;
 }
 
 .introducao h1 span {
@@ -121,7 +140,7 @@ img {
   color: #b2b2b2;
   font-size: 1.5rem;
   line-height: 1.5;
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .introducao a {
@@ -132,8 +151,19 @@ img {
   padding: 12px 16px;
   display: block;
   border-radius: 4px;
-  margin-top: 40px;
+  margin-bottom: 40px;
   justify-self: start;
+}
+
+@media (max-width: 1100px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+
+  .introducao p {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
 }
 
 @media (max-width: 800px) {
@@ -148,20 +178,37 @@ img {
 }
 
 @media (max-width: 600px) {
+  .introducao-bg {
+    box-shadow: none;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao-foto {
+    display: none;
+  }
+
   .introducao h1 {
     font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
   }
 
   .introducao p {
-    font-size: 1rem;
-    line-height: 1.1;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+
   }
 
   .introducao a {
     padding: 8px 12px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: .6rem;
+    justify-self: center;
   }
 
 }
