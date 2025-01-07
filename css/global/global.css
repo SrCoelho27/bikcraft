@@ -4,7 +4,7 @@
 }
 
 body {
-  margin-bottom: 2000px;
+  margin-bottom: 500px;
 }
 
 ul {
@@ -13,7 +13,8 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
